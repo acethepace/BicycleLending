@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mallock.bicyclelending.SignUpActivity"
+    tools:showIn="@layout/activity_sign_up"
+    android:padding="0dp">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/cyclewall21">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Enter Your Details here!"
+            android:id="@+id/textView"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:ems="10"
+            android:id="@+id/userNameET"
+            android:hint="User name"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="48dp"
+            android:background="#2effffff"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/firstNameET"
+            android:hint="First name"
+            android:padding="20dp"
+            android:textColor="#ffffff"
+            android:background="#2effffff"
+            android:layout_below="@+id/userNameET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="20dp"
+            android:ems="10"
+            android:id="@+id/lastNameET"
+            android:hint="Last name"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/firstNameET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#2effffff" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:ems="10"
+            android:id="@+id/PasswordET"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:background="#2effffff"
+            android:layout_below="@+id/lastNameET"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:ems="10"
+            android:id="@+id/PasswordET2"
+            android:hint="Retype Password"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/PasswordET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#2effffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:ems="10"
+            android:hint="Enter postal address"
+            android:padding="20dp"
+            android:lines="2"
+            android:minLines="2"
+            android:id="@+id/postalAddressET"
+            android:textColor="#ffffff"
+            android:background="#2effffff"
+            android:layout_below="@+id/PasswordET2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Sign up"
+            android:padding="20dp"
+            android:lines="2"
+            android:minLines="2"
+            android:id="@+id/signUpButton"
+            android:foreground="#da0e0e"
+            android:background="#006699"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/FOREGROUND"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/postalAddressET"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

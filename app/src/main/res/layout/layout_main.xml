@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BACKGROUND"
+    android:fitsSystemWindows="true"
+    tools:context="com.mallock.bicyclelending.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/listbackground"
+            tools:context="com.mallock.bicyclelending.MainActivity">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_pickup_point"
+                android:paddingBottom="20dp"
+                />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/list_view"
+                android:divider="@drawable/list_view_divider"
+                android:dividerPadding="10dp"
+                android:showDividers="middle"
+                android:dividerHeight="1dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:fastScrollAlwaysVisible="false"
+                android:background="#00ffffff">
+
+            </ListView>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
